@@ -1,4 +1,4 @@
-# 📟 Resollect - FullStack Takehome Assignment
+# Resollect - FullStack Takehome Assignment
 
 **Author:** Peguda Akshitha  
 **Email:** 2021csb1122@iitrpr.ac.in  
@@ -10,9 +10,9 @@
 
 A full-stack **Loan Portfolio Management** application built with:
 
-- 💻 **Frontend:** React.js (deployed on Vercel)
-- ⚙️ **Backend:** Django + Django REST Framework (deployed on AWS EC2)
-- 💃 **Database:** PostgreSQL
+-  **Frontend:** React.js (deployed on Vercel)
+-  **Backend:** Django + Django REST Framework (deployed on AWS EC2)
+-  **Database:** PostgreSQL
 
 The application supports **loan tracking, CRUD operations, filtering, searching, pagination, and bulk deletion**.
 
@@ -146,6 +146,3 @@ Since Vercel serves over `HTTPS`, make sure your backend also uses `HTTPS` to av
 🔗 [GitHub Repo](https://github.com/Akshitha181203/Recollect_FullStack_TakeHome_Assignment)
 
 ---
-
-> Built with ❤️ for Resollect Takehome Assignment
-
