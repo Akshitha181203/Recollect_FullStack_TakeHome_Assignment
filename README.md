@@ -140,9 +140,3 @@ Since Vercel serves over `HTTPS`, make sure your backend also uses `HTTPS` to av
 - Mixed content warning occurs if the backend is served over HTTP while frontend is HTTPS
 
 ---
-
-## 📁 GitHub Repository
-
-🔗 [GitHub Repo](https://github.com/Akshitha181203/Recollect_FullStack_TakeHome_Assignment)
-
----
