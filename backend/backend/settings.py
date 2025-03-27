@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5^zk!%zs0$)k@4d^tqxoei(&*p9sbyax+-de$)(6gaxg)90&%q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'portfolio',
     'corsheaders',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,16 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  
+    "https://recollect-full-stack-take-home-assignment-y86a42gau.vercel.app"
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend'
+    ]
+}
 
 ROOT_URLCONF = 'backend.urls'
 

@@ -21,24 +21,6 @@
   cursor: pointer;
 }
 
-/* .portfolio-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  min-width: 160px;
-}
-
-.range-inputs {
-  display: flex;
-  gap: 0.5rem;
-} */
-
 .filter-row {
   display: flex;
   flex-wrap: wrap;
