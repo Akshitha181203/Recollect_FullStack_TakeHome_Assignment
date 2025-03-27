@@ -24,7 +24,7 @@ const Portfolio = () => {
   useEffect(() => {
     axios
       // .get("http://localhost:8000/api/loans/")
-      .get("http://54.123.45.67:8000/api/loans/")
+      .get("http://51.20.64.214:8000/api/loans/")
       .then((res) => setLoans(res.data))
       .catch((err) => console.error("API Error:", err));
   }, []);
@@ -86,7 +86,7 @@ const Portfolio = () => {
       // Edit mode
       axios
         // .patch(`http://localhost:8000/api/loans/${loanId}/`, data)
-        .patch(`http://54.123.45.67:8000/api/loans/${loanId}/`, data)
+        .patch(`http://51.20.64.214:8000/api/loans/${loanId}/`, data)
         .then((res) => {
           setLoans((prev) =>
             prev.map((loan) => (loan.id === loanId ? res.data : loan))
@@ -100,7 +100,7 @@ const Portfolio = () => {
       // Create mode
       axios
         // .post("http://localhost:8000/api/loans/", data)
-        .post("http://54.123.45.67:8000/api/loans/", data)
+        .post("http://51.20.64.214:8000/api/loans/", data)
         .then((res) => {
           setLoans((prev) => [...prev, res.data]);
           setShowAddLoan(false);
@@ -112,7 +112,7 @@ const Portfolio = () => {
   const handleDelete = (id) => {
     axios
       // .delete(`http://localhost:8000/api/loans/${id}/`)
-      .delete(`http://54.123.45.67:8000/api/loans/${id}/`)
+      .delete(`http://51.20.64.214:8000/api/loans/${id}/`)
       .then(() => {
         setLoans((prev) => prev.filter((loan) => loan.id !== id));
         setSelectedLoanIds([]);
@@ -122,7 +122,7 @@ const Portfolio = () => {
 
   const handleBulkDelete = () => {
     axios
-      .post("http://54.123.45.67:8000/api/loans/bulk_delete/", {
+      .post("http://51.20.64.214:8000/api/loans/bulk_delete/", {
         ids: selectedLoanIds,
       })
       // .post("http://localhost:8000/api/loans/bulk_delete/", {
